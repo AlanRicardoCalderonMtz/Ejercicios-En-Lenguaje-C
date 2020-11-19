@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Suma_multi.o
+	${OBJECTDIR}/Promedio.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c.exe: ${OBJEC
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Suma_multi.o: Suma_multi.c
+${OBJECTDIR}/Promedio.o: Promedio.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Suma_multi.o Suma_multi.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Promedio.o Promedio.c
 
 # Subprojects
 .build-subprojects:

@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Ejercicio1.c</itemPath>
+      <itemPath>Promedio.c</itemPath>
       <itemPath>Saludo.c</itemPath>
       <itemPath>Suma_multi.c</itemPath>
       <itemPath>Volumen_cubo.c</itemPath>
@@ -39,7 +40,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Suma_multi.c" ex="false" tool="0" flavor2="0">
+      <item path="Promedio.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -63,6 +64,8 @@
         </asmTool>
       </compileType>
       <item path="Ejercicio1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Promedio.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Saludo.c" ex="false" tool="0" flavor2="0">
       </item>
