@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Ejercicio1.o \
 	${OBJECTDIR}/Saludo.o
 
 
@@ -61,6 +62,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Ejercicio1.o: Ejercicio1.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ejercicio1.o Ejercicio1.c
 
 ${OBJECTDIR}/Saludo.o: Saludo.c
 	${MKDIR} -p ${OBJECTDIR}

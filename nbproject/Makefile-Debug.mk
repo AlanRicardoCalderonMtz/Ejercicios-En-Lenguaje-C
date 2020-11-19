@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Saludo.o
+	${OBJECTDIR}/Ejercicio1.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c.exe: ${OBJEC
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Saludo.o: Saludo.c
+${OBJECTDIR}/Ejercicio1.o: Ejercicio1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Saludo.o Saludo.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ejercicio1.o Ejercicio1.c
 
 # Subprojects
 .build-subprojects:
