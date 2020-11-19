@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Ejercicio1.o \
+	${OBJECTDIR}/Intercambia_valores.o \
 	${OBJECTDIR}/Promedio.o \
 	${OBJECTDIR}/Saludo.o \
 	${OBJECTDIR}/Suma_multi.o \
@@ -70,6 +71,11 @@ ${OBJECTDIR}/Ejercicio1.o: Ejercicio1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ejercicio1.o Ejercicio1.c
+
+${OBJECTDIR}/Intercambia_valores.o: Intercambia_valores.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Intercambia_valores.o Intercambia_valores.c
 
 ${OBJECTDIR}/Promedio.o: Promedio.c
 	${MKDIR} -p ${OBJECTDIR}
