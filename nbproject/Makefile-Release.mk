@@ -36,7 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Ejercicio1.o \
-	${OBJECTDIR}/Saludo.o
+	${OBJECTDIR}/Saludo.o \
+	${OBJECTDIR}/Volumen_cubo.o
 
 
 # C Compiler Flags
@@ -72,6 +73,11 @@ ${OBJECTDIR}/Saludo.o: Saludo.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Saludo.o Saludo.c
+
+${OBJECTDIR}/Volumen_cubo.o: Volumen_cubo.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Volumen_cubo.o Volumen_cubo.c
 
 # Subprojects
 .build-subprojects:
