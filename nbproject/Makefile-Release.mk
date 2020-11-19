@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Ejercicio1.o \
 	${OBJECTDIR}/Saludo.o \
+	${OBJECTDIR}/Suma_multi.o \
 	${OBJECTDIR}/Volumen_cubo.o
 
 
@@ -73,6 +74,11 @@ ${OBJECTDIR}/Saludo.o: Saludo.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Saludo.o Saludo.c
+
+${OBJECTDIR}/Suma_multi.o: Suma_multi.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Suma_multi.o Suma_multi.c
 
 ${OBJECTDIR}/Volumen_cubo.o: Volumen_cubo.c
 	${MKDIR} -p ${OBJECTDIR}

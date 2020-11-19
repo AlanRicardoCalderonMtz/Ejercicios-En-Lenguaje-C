@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Volumen_cubo.o
+	${OBJECTDIR}/Suma_multi.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c.exe: ${OBJEC
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Volumen_cubo.o: Volumen_cubo.c
+${OBJECTDIR}/Suma_multi.o: Suma_multi.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Volumen_cubo.o Volumen_cubo.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Suma_multi.o Suma_multi.c
 
 # Subprojects
 .build-subprojects:
