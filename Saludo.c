@@ -10,7 +10,7 @@
 
 int main(int argc, char** argv) {
     
-    printf("¡¡¡¡ Holaaaa Mundoooo!!! ");
+    printf("¡¡¡¡ Holaaaa Mundoooo XD!!! ");
 
     return (EXIT_SUCCESS);
 }
