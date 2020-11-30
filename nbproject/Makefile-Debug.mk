@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Intercambia_valores.o
+	${OBJECTDIR}/Saludo.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c.exe: ${OBJEC
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ejercicios_en_lenguaje_c ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Intercambia_valores.o: Intercambia_valores.c
+${OBJECTDIR}/Saludo.o: Saludo.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Intercambia_valores.o Intercambia_valores.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Saludo.o Saludo.c
 
 # Subprojects
 .build-subprojects:

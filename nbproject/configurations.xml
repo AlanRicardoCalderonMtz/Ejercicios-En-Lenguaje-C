@@ -41,7 +41,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Intercambia_valores.c" ex="false" tool="0" flavor2="0">
+      <item path="Saludo.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
